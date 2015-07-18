@@ -21,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         super(context, DB_NAME, null, 1);
         this.myContext = context;
     }
-    private boolean checkDataBase(){
+    public boolean checkDataBase(){
 
         SQLiteDatabase checkDB = null;
 
