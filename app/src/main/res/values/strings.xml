@@ -3,4 +3,16 @@
     
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="btneasy">Easy</string>
+    <string name="btnmed">Medium</string>
+    <string name="btndiff">Difficult</string>
+        <string name="title_activity_easy_c">EasyC</string>
+    <string name="txtQno">Large Text</string>
+    <string name="txtQues">Large Text</string>
+    <string name="rad1">New RadioButton</string>
+    <string name="rad2">New RadioButton</string>
+    <string name="rad3">New RadioButton</string>
+    <string name="rad4">New RadioButton</string>
+    <string name="btnsbm">Submit</string>
+    <string name="btnNext">Next</string>
 </resources>

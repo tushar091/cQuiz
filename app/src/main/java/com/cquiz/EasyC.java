@@ -1,32 +1,34 @@
 package com.cquiz;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
-
-public class MainActivity extends ActionBarActivity {
+public class EasyC extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_easy_c);
+
+        TextView txtQno = (TextView)findViewById(R.id.txtQno);
+        txtQno.setText("Question 1");
+
+        TextView txtQue = (TextView)findViewById(R.id.txtQues);
+        txtQue.setText("can we initialize variable size Array");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_easy_c, menu);
         return true;
     }
 
-    public void onclick(View v){
-        Intent I = new Intent(this,EasyC.class);
-        startActivity(I);
-    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
