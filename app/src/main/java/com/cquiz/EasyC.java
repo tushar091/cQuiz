@@ -20,6 +20,9 @@ public class EasyC extends ActionBarActivity {
 
         TextView txtQue = (TextView)findViewById(R.id.txtQues);
         txtQue.setText("can we initialize variable size Array");
+        ExternalDbOpenHelper d= new ExternalDbOpenHelper(this);
+
+
     }
 
     @Override
