@@ -1,5 +1,6 @@
 package com.cquiz;
 
+import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 public class EasyC extends ActionBarActivity {
 
@@ -21,7 +23,25 @@ public class EasyC extends ActionBarActivity {
         TextView txtQue = (TextView)findViewById(R.id.txtQues);
         txtQue.setText("can we initialize variable size Array");
         ExternalDbOpenHelper d= new ExternalDbOpenHelper(this);
+       // boolean op = d.insertdata();
+       /*  if(op)
+            Toast.makeText(EasyC.this,"Successfull",Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(EasyC.this,"UnSuccessfull",Toast.LENGTH_LONG).show();*/
 
+        Cursor c = d.getData();
+       /* if(c.getCount()== 0)
+        {
+            Toast.makeText(EasyC.this,"unSuccessfull",Toast.LENGTH_LONG).show();
+        }
+        else
+            Toast.makeText(EasyC.this,"Successfull",Toast.LENGTH_LONG).show();*/
+
+        StringBuffer s = new StringBuffer();
+        while(c.moveToNext()) {
+            s.append(c.getString(1));
+            txtQue.setText(s.toString());
+        }
 
     }
 
