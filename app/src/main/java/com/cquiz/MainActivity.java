@@ -3,18 +3,59 @@ package com.cquiz;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 
+
 public class MainActivity extends ActionBarActivity {
+    private final String tag = "TKT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(tag,"oncreate");
     }
+
+    @Override
+    protected void onStart() {
+        Log.d(tag, "onstart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(tag, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(tag, "onpause");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(tag, "onRestart");
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(tag, "onstop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(tag,"ondestroy");
+        super.onDestroy();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

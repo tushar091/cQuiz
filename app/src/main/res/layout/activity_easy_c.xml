@@ -82,7 +82,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/btnNext"
                 android:id="@+id/button5"
-                android:layout_marginLeft="15dp"/>
+                android:layout_marginLeft="15dp"
+                android:onClick="onbuttonclick" />
         </LinearLayout>
 
     </LinearLayout>
