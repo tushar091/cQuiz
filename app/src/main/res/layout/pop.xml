@@ -20,7 +20,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="You have 10 minutes to solve 10 questions"
         android:id="@+id/textView2"
+        android:textStyle="bold"
         android:layout_marginBottom="119dp"
         android:layout_above="@+id/btnPop"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 </RelativeLayout>
