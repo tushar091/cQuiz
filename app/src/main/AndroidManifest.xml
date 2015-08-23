@@ -20,6 +20,14 @@
             android:name=".EasyC"
             android:label="@string/title_activity_easy_c" >
         </activity>
+        <activity
+            android:name=".result"
+            android:label="@string/title_activity_result" >
+        </activity>
+        <activity android:name=".confirmPop" android:label="confirmpop"
+            android:theme="@style/AppTheme.Customtheme">
+
+        </activity>
     </application>
 
 </manifest>

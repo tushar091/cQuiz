@@ -1,50 +1,38 @@
 package com.cquiz;
 
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 
-
-public class MainActivity extends ActionBarActivity {
-    private final String tag = "TKT";
-
+public class result extends AppCompatActivity {
+    public TextView txt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Log.d(tag, "oncreate");
+        setContentView(R.layout.activity_result);
+        txt = (TextView)findViewById(R.id.result);
+        Intent I = getIntent();
+        int a = I.getIntExtra("result",0);
+        txt.setText("" + a);
     }
-
-
 
     @Override
-    protected void onDestroy() {
-        Log.d(tag,"ondestroy");
-        super.onDestroy();
+    public void onBackPressed() {
+        Intent I = new Intent(this,MainActivity.class);
+        startActivity(I);
+        finish();
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_result, menu);
         return true;
     }
 
-    public void onclick(View v){
-
-        Intent I = new Intent(getApplicationContext(),confirmPop.class);
-        startActivity(I);
-    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
