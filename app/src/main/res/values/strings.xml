@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">cQuiz</string>
-    
+    <string name="app_name">geekyQuiz</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="btneasy">Easy</string>
-    <string name="btnmed">Medium</string>
-    <string name="btndiff">Difficult</string>
-        <string name="title_activity_easy_c">EasyC</string>
+    <string name="btneasy">Questions</string>
+    <string name="btnmed">Learning Resources</string>
+    <string name="btndiff">Credits</string>
+    <string name="title_activity_easy_c">EasyC</string>
     <string name="txtQno">Large Text</string>
     <string name="txtQues">Large Text</string>
     <string name="rad1">New RadioButton</string>
@@ -15,5 +15,11 @@
     <string name="rad4">New RadioButton</string>
     <string name="btnsbm">Submit</string>
     <string name="btnNext">Next</string>
-        <string name="title_activity_result">result</string>
+    <string name="title_activity_result">result</string>
+    <string name="youtube_key">AIzaSyBCy1ehLY80aGlUqnZUzhcL-824cxOdDYI</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8561402704261027/3914323391</string>
+    <string name="title_activity_credits">Credits</string>
+    <string name="tushar">Made the entire app and helped with questions</string>
+    <string name="poonam">Made the Questions</string>
+    <string name="nimish">Helped with overall aesthetics and design of the app</string>
 </resources>

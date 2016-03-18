@@ -1,4 +1,4 @@
-package com.cquiz;
+package com.geekyquiz;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
